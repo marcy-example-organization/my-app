@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://marcy-example-organization.github.io/my-app/",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^7.3.1"
   }
 }
